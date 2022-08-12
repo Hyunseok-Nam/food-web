@@ -5,7 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')    #홈페이지 가장 상위 루트 www.aaa.com/
 def hello():
-    return 'Hello, World!'
+    return render_template("index.html")
+    # return 'Hello, World!'
 
 @app.route('/naver')    
 def naver():
